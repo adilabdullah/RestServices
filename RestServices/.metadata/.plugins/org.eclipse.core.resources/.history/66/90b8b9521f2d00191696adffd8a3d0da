@@ -1,0 +1,5 @@
+package com.java.connection;
+
+public class DbConnection {
+
+}

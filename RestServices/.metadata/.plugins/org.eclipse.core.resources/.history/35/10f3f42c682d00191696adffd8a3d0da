@@ -1,0 +1,6 @@
+package com.java.resource;
+
+public class Challan {
+	int sno,age;
+	String name,sex,cell;
+}

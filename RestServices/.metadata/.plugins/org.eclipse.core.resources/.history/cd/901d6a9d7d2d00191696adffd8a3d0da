@@ -1,0 +1,91 @@
+package com.java.services;
+
+import java.sql.Connection;
+
+import javax.ws.rs.Consumes;
+import javax.ws.rs.FormParam;
+import javax.ws.rs.GET;
+import javax.ws.rs.POST;
+import javax.ws.rs.Path;
+import javax.ws.rs.PathParam;
+import javax.ws.rs.Produces;
+import javax.ws.rs.core.MediaType;
+
+import oracle.jdbc.OraclePreparedStatement;
+
+import com.java.connection.DbConnection;
+import com.java.resource.Challan;
+import com.java.resource.Response;
+
+@Path("/Person")
+public class Operation {
+Connection conn=null;
+String sql="";	
+
+@Path("/AddPerson")
+@POST
+@Produces(MediaType.APPLICATION_JSON)
+@Consumes(MediaType.APPLICATION_FORM_URLENCODED)
+public Challan InsertData(@FormParam("sno") int sno,
+		@FormParam("name") String name,@FormParam("age") int age,
+		@FormParam("sex") String sex,@FormParam("cell") String cell)
+	{
+		try{
+		conn=DbConnection.Conn();
+		sql="insert into person values ("+sno+",'"+name+"',"+age+",'"+sex+"','"+cell+"')";
+	
+		//	+ "into purchase_order values (sp.nextval,"+po+",'"+client+"',sysdate)"
+				//		+ "select * from dual";
+		OraclePreparedStatement pst=(OraclePreparedStatement)conn.prepareStatement(sql);
+		  pst.execute();
+//		Response rs=new Response(00,"Success");
+			 Challan che=new Challan(sno,age,name,sex,cell);
+		  return che;
+		}
+	catch(Exception ex)
+		{
+		ex.printStackTrace();
+		}
+		//return new Response(99,"Failed");
+	return null;
+	}
+
+
+@Path("/AddPersons")
+@POST
+@Produces(MediaType.APPLICATION_JSON)
+@Consumes(MediaType.APPLICATION_JSON)
+/*public Response InsertData2(@PathParam("sno") int sno,
+		@PathParam("name") String name,@PathParam("age") int age,
+		@PathParam("sex") String sex,@PathParam("cell") String cell)  */
+public Challan InsertData2(Challan chl)
+{
+		try{
+		conn=DbConnection.Conn();
+		sql="insert into person values ("+chl.getSno()+",'"+chl.getName()+"',"+chl.getAge()+",'"+chl.getSex()+"','"+chl.getCell()+"')";
+	 Challan che=new Challan(chl.getSno(),chl.getAge(),chl.getName(),chl.getSex(),chl.getCell());
+		//	+ "into purchase_order values (sp.nextval,"+po+",'"+client+"',sysdate)"
+				//		+ "select * from dual";
+		OraclePreparedStatement pst=(OraclePreparedStatement)conn.prepareStatement(sql);
+		  pst.execute();
+//		Response rs=new Response(00,"Success");
+		return che;
+		}
+	catch(Exception ex)
+		{
+		ex.printStackTrace();
+		}
+	//	return new Response(99,"Failed");
+    return null;	
+}
+
+
+@Path("/Test")
+@GET
+@Produces(MediaType.TEXT_PLAIN)
+public String getTest()
+{
+return"This medhod is for test";
+}
+
+}

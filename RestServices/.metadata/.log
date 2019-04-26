@@ -1,0 +1,181 @@
+!SESSION 2019-02-10 15:16:44.140 -----------------------------------------------
+eclipse.buildId=4.4.1.M20140925-0400
+java.version=1.8.0_45
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.jee.product -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product -data C:\Users\pc\RestServices -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.m2e.logback.configuration 2 0 2019-02-10 15:16:51.200
+!MESSAGE Exception while setting up logging:org.eclipse.osgi.internal.framework.EquinoxConfiguration$1 cannot be cast to java.lang.String
+!STACK 0
+java.lang.ClassCastException: org.eclipse.osgi.internal.framework.EquinoxConfiguration$1 cannot be cast to java.lang.String
+	at org.eclipse.m2e.logback.configuration.LogHelper.logJavaProperties(LogHelper.java:26)
+	at org.eclipse.m2e.logback.configuration.LogPlugin.loadConfiguration(LogPlugin.java:189)
+	at org.eclipse.m2e.logback.configuration.LogPlugin.configureLogback(LogPlugin.java:144)
+	at org.eclipse.m2e.logback.configuration.LogPlugin.access$2(LogPlugin.java:107)
+	at org.eclipse.m2e.logback.configuration.LogPlugin$1.run(LogPlugin.java:62)
+	at java.util.TimerThread.mainLoop(Unknown Source)
+	at java.util.TimerThread.run(Unknown Source)
+
+!ENTRY org.eclipse.egit.ui 2 0 2019-02-10 15:17:36.515
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\pc'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2019-02-10 15:40:01.441
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Java Model Status [Unknown javadoc format for Connection {key=Ljava/sql/Connection;} [in Connection.class [in java.sql [in C:\Program Files\Java\jre1.8.0_45\lib\rt.jar]]]]
+	at org.eclipse.jdt.internal.core.JavadocContents.getTypeDoc(JavadocContents.java:81)
+	at org.eclipse.jdt.internal.core.BinaryType.getAttachedJavadoc(BinaryType.java:999)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:500)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavadocHover.getHoverInfo(JavadocHover.java:689)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavadocHover.internalGetHoverInfo(JavadocHover.java:607)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavadocHover.getHoverInfo2(JavadocHover.java:599)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:129)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:85)
+	at org.eclipse.jface.text.TextViewerHoverManager$4.run(TextViewerHoverManager.java:166)
+!SUBENTRY 1 org.eclipse.jdt.core 4 1009 2019-02-10 15:40:01.441
+!MESSAGE Unknown javadoc format for Connection {key=Ljava/sql/Connection;} [in Connection.class [in java.sql [in C:\Program Files\Java\jre1.8.0_45\lib\rt.jar]]]
+
+!ENTRY org.eclipse.jst.server.tomcat.core 4 0 2019-02-11 01:34:59.210
+!MESSAGE Publishing failed with multiple errors
+!SUBENTRY 1 org.eclipse.wst.server.core 4 0 2019-02-11 01:34:59.212
+!MESSAGE Could not delete C:/Users/pc/RestServices/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/wtpwebapps/DynamicRestServices/WEB-INF/lib/aopalliance-repackaged-2.5.0-b42.jar. May be locked by another process.
+!SUBENTRY 1 org.eclipse.wst.server.core 4 0 2019-02-11 01:34:59.212
+!MESSAGE Could not delete C:/Users/pc/RestServices/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/wtpwebapps/DynamicRestServices/WEB-INF/lib/cdi-api-1.1.jar. May be locked by another process.
+!SUBENTRY 1 org.eclipse.wst.server.core 4 0 2019-02-11 01:34:59.212
+!MESSAGE Could not delete C:/Users/pc/RestServices/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/wtpwebapps/DynamicRestServices/WEB-INF/lib/el-api-2.2.jar. May be locked by another process.
+!SUBENTRY 1 org.eclipse.wst.server.core 4 0 2019-02-11 01:34:59.212
+!MESSAGE Could not delete C:/Users/pc/RestServices/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/wtpwebapps/DynamicRestServices/WEB-INF/lib/hk2-api-2.5.0-b42.jar. May be locked by another process.
+!SUBENTRY 1 org.eclipse.wst.server.core 4 0 2019-02-11 01:34:59.212
+!MESSAGE Could not delete C:/Users/pc/RestServices/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/wtpwebapps/DynamicRestServices/WEB-INF/lib/hk2-locator-2.5.0-b42.jar. May be locked by another process.
+!SUBENTRY 1 org.eclipse.wst.server.core 4 0 2019-02-11 01:34:59.212
+!MESSAGE Could not delete C:/Users/pc/RestServices/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/wtpwebapps/DynamicRestServices/WEB-INF/lib/hk2-utils-2.5.0-b42.jar. May be locked by another process.
+!SUBENTRY 1 org.eclipse.wst.server.core 4 0 2019-02-11 01:34:59.212
+!MESSAGE Could not delete C:/Users/pc/RestServices/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/wtpwebapps/DynamicRestServices/WEB-INF/lib/jackson-core-asl-1.9.2.jar. May be locked by another process.
+!SUBENTRY 1 org.eclipse.wst.server.core 4 0 2019-02-11 01:34:59.212
+!MESSAGE Could not delete C:/Users/pc/RestServices/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/wtpwebapps/DynamicRestServices/WEB-INF/lib/jackson-jaxrs-1.9.2.jar. May be locked by another process.
+!SUBENTRY 1 org.eclipse.wst.server.core 4 0 2019-02-11 01:34:59.212
+!MESSAGE Could not delete C:/Users/pc/RestServices/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/wtpwebapps/DynamicRestServices/WEB-INF/lib/jackson-mapper-asl-1.9.2.jar. May be locked by another process.
+!SUBENTRY 1 org.eclipse.wst.server.core 4 0 2019-02-11 01:34:59.212
+!MESSAGE Could not delete C:/Users/pc/RestServices/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/wtpwebapps/DynamicRestServices/WEB-INF/lib/jackson-xc-1.9.2.jar. May be locked by another process.
+!SUBENTRY 1 org.eclipse.wst.server.core 4 0 2019-02-11 01:34:59.212
+!MESSAGE Could not delete C:/Users/pc/RestServices/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/wtpwebapps/DynamicRestServices/WEB-INF/lib/javassist-3.22.0-CR2.jar. May be locked by another process.
+!SUBENTRY 1 org.eclipse.wst.server.core 4 0 2019-02-11 01:34:59.212
+!MESSAGE Could not delete C:/Users/pc/RestServices/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/wtpwebapps/DynamicRestServices/WEB-INF/lib/javax.annotation-api-1.2.jar. May be locked by another process.
+!SUBENTRY 1 org.eclipse.wst.server.core 4 0 2019-02-11 01:34:59.212
+!MESSAGE Could not delete C:/Users/pc/RestServices/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/wtpwebapps/DynamicRestServices/WEB-INF/lib/javax.inject-1.jar. May be locked by another process.
+!SUBENTRY 1 org.eclipse.wst.server.core 4 0 2019-02-11 01:34:59.212
+!MESSAGE Could not delete C:/Users/pc/RestServices/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/wtpwebapps/DynamicRestServices/WEB-INF/lib/javax.inject-2.5.0-b42.jar. May be locked by another process.
+!SUBENTRY 1 org.eclipse.wst.server.core 4 0 2019-02-11 01:34:59.212
+!MESSAGE Could not delete C:/Users/pc/RestServices/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/wtpwebapps/DynamicRestServices/WEB-INF/lib/javax.json-1.1.jar. May be locked by another process.
+!SUBENTRY 1 org.eclipse.wst.server.core 4 0 2019-02-11 01:34:59.212
+!MESSAGE Could not delete C:/Users/pc/RestServices/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/wtpwebapps/DynamicRestServices/WEB-INF/lib/javax.json-api-1.1.jar. May be locked by another process.
+!SUBENTRY 1 org.eclipse.wst.server.core 4 0 2019-02-11 01:34:59.212
+!MESSAGE Could not delete C:/Users/pc/RestServices/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/wtpwebapps/DynamicRestServices/WEB-INF/lib/javax.json.bind-api-1.0.jar. May be locked by another process.
+!SUBENTRY 1 org.eclipse.wst.server.core 4 0 2019-02-11 01:34:59.212
+!MESSAGE Could not delete C:/Users/pc/RestServices/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/wtpwebapps/DynamicRestServices/WEB-INF/lib/javax.servlet-api-3.0.1.jar. May be locked by another process.
+!SUBENTRY 1 org.eclipse.wst.server.core 4 0 2019-02-11 01:34:59.212
+!MESSAGE Could not delete C:/Users/pc/RestServices/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/wtpwebapps/DynamicRestServices/WEB-INF/lib/javax.ws.rs-api-2.1-m09.jar. May be locked by another process.
+!SUBENTRY 1 org.eclipse.wst.server.core 4 0 2019-02-11 01:34:59.212
+!MESSAGE Could not delete C:/Users/pc/RestServices/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/wtpwebapps/DynamicRestServices/WEB-INF/lib/jaxb-api-2.2.7.jar. May be locked by another process.
+!SUBENTRY 1 org.eclipse.wst.server.core 4 0 2019-02-11 01:34:59.213
+!MESSAGE Could not delete C:/Users/pc/RestServices/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/wtpwebapps/DynamicRestServices/WEB-INF/lib/jboss-interceptors-api_1.1_spec-1.0.0.Beta1.jar. May be locked by another process.
+!SUBENTRY 1 org.eclipse.wst.server.core 4 0 2019-02-11 01:34:59.213
+!MESSAGE Could not delete C:/Users/pc/RestServices/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/wtpwebapps/DynamicRestServices/WEB-INF/lib/jersey-apache-client-1.19.1.jar. May be locked by another process.
+!SUBENTRY 1 org.eclipse.wst.server.core 4 0 2019-02-11 01:34:59.213
+!MESSAGE Could not delete C:/Users/pc/RestServices/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/wtpwebapps/DynamicRestServices/WEB-INF/lib/jersey-atom-abdera-1.19.1.jar. May be locked by another process.
+!SUBENTRY 1 org.eclipse.wst.server.core 4 0 2019-02-11 01:34:59.213
+!MESSAGE Could not delete C:/Users/pc/RestServices/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/wtpwebapps/DynamicRestServices/WEB-INF/lib/jersey-client-1.19.1.jar. May be locked by another process.
+!SUBENTRY 1 org.eclipse.wst.server.core 4 0 2019-02-11 01:34:59.213
+!MESSAGE Could not delete C:/Users/pc/RestServices/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/wtpwebapps/DynamicRestServices/WEB-INF/lib/jersey-client.jar. May be locked by another process.
+!SUBENTRY 1 org.eclipse.wst.server.core 4 0 2019-02-11 01:34:59.213
+!MESSAGE Could not delete C:/Users/pc/RestServices/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/wtpwebapps/DynamicRestServices/WEB-INF/lib/jersey-common.jar. May be locked by another process.
+!SUBENTRY 1 org.eclipse.wst.server.core 4 0 2019-02-11 01:34:59.213
+!MESSAGE Could not delete C:/Users/pc/RestServices/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/wtpwebapps/DynamicRestServices/WEB-INF/lib/jersey-container-servlet-core.jar. May be locked by another process.
+!SUBENTRY 1 org.eclipse.wst.server.core 4 0 2019-02-11 01:34:59.213
+!MESSAGE Could not delete C:/Users/pc/RestServices/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/wtpwebapps/DynamicRestServices/WEB-INF/lib/jersey-container-servlet.jar. May be locked by another process.
+!SUBENTRY 1 org.eclipse.wst.server.core 4 0 2019-02-11 01:34:59.213
+!MESSAGE Could not delete C:/Users/pc/RestServices/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/wtpwebapps/DynamicRestServices/WEB-INF/lib/jersey-core-1.19.1.jar. May be locked by another process.
+!SUBENTRY 1 org.eclipse.wst.server.core 4 0 2019-02-11 01:34:59.213
+!MESSAGE Could not delete C:/Users/pc/RestServices/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/wtpwebapps/DynamicRestServices/WEB-INF/lib/jersey-guice-1.19.1.jar. May be locked by another process.
+!SUBENTRY 1 org.eclipse.wst.server.core 4 0 2019-02-11 01:34:59.214
+!MESSAGE Could not delete C:/Users/pc/RestServices/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/wtpwebapps/DynamicRestServices/WEB-INF/lib/jersey-hk2.jar. May be locked by another process.
+!SUBENTRY 1 org.eclipse.wst.server.core 4 0 2019-02-11 01:34:59.214
+!MESSAGE Could not delete C:/Users/pc/RestServices/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/wtpwebapps/DynamicRestServices/WEB-INF/lib/jersey-json-1.19.1.jar. May be locked by another process.
+!SUBENTRY 1 org.eclipse.wst.server.core 4 0 2019-02-11 01:34:59.214
+!MESSAGE Could not delete C:/Users/pc/RestServices/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/wtpwebapps/DynamicRestServices/WEB-INF/lib/jersey-media-jaxb.jar. May be locked by another process.
+!SUBENTRY 1 org.eclipse.wst.server.core 4 0 2019-02-11 01:34:59.214
+!MESSAGE Could not delete C:/Users/pc/RestServices/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/wtpwebapps/DynamicRestServices/WEB-INF/lib/jersey-media-json-binding.jar. May be locked by another process.
+!SUBENTRY 1 org.eclipse.wst.server.core 4 0 2019-02-11 01:34:59.215
+!MESSAGE Could not delete C:/Users/pc/RestServices/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/wtpwebapps/DynamicRestServices/WEB-INF/lib/jersey-media-sse.jar. May be locked by another process.
+!SUBENTRY 1 org.eclipse.wst.server.core 4 0 2019-02-11 01:34:59.215
+!MESSAGE Could not delete C:/Users/pc/RestServices/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/wtpwebapps/DynamicRestServices/WEB-INF/lib/jersey-multipart-1.19.1.jar. May be locked by another process.
+!SUBENTRY 1 org.eclipse.wst.server.core 4 0 2019-02-11 01:34:59.215
+!MESSAGE Could not delete C:/Users/pc/RestServices/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/wtpwebapps/DynamicRestServices/WEB-INF/lib/jersey-server-1.19.1.jar. May be locked by another process.
+!SUBENTRY 1 org.eclipse.wst.server.core 4 0 2019-02-11 01:34:59.215
+!MESSAGE Could not delete C:/Users/pc/RestServices/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/wtpwebapps/DynamicRestServices/WEB-INF/lib/jersey-server.jar. May be locked by another process.
+!SUBENTRY 1 org.eclipse.wst.server.core 4 0 2019-02-11 01:34:59.215
+!MESSAGE Could not delete C:/Users/pc/RestServices/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/wtpwebapps/DynamicRestServices/WEB-INF/lib/jersey-servlet-1.19.1.jar. May be locked by another process.
+!SUBENTRY 1 org.eclipse.wst.server.core 4 0 2019-02-11 01:34:59.216
+!MESSAGE Could not delete C:/Users/pc/RestServices/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/wtpwebapps/DynamicRestServices/WEB-INF/lib/jersey-simple-server-1.19.1.jar. May be locked by another process.
+!SUBENTRY 1 org.eclipse.wst.server.core 4 0 2019-02-11 01:34:59.216
+!MESSAGE Could not delete C:/Users/pc/RestServices/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/wtpwebapps/DynamicRestServices/WEB-INF/lib/jersey-spring-1.19.1.jar. May be locked by another process.
+!SUBENTRY 1 org.eclipse.wst.server.core 4 0 2019-02-11 01:34:59.216
+!MESSAGE Could not delete C:/Users/pc/RestServices/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/wtpwebapps/DynamicRestServices/WEB-INF/lib/jettison-1.1.jar. May be locked by another process.
+!SUBENTRY 1 org.eclipse.wst.server.core 4 0 2019-02-11 01:34:59.216
+!MESSAGE Could not delete C:/Users/pc/RestServices/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/wtpwebapps/DynamicRestServices/WEB-INF/lib/jsr250-api-1.0.jar. May be locked by another process.
+!SUBENTRY 1 org.eclipse.wst.server.core 4 0 2019-02-11 01:34:59.217
+!MESSAGE Could not delete C:/Users/pc/RestServices/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/wtpwebapps/DynamicRestServices/WEB-INF/lib/jsr311-api-1.1.1.jar. May be locked by another process.
+!SUBENTRY 1 org.eclipse.wst.server.core 4 0 2019-02-11 01:34:59.217
+!MESSAGE Could not delete C:/Users/pc/RestServices/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/wtpwebapps/DynamicRestServices/WEB-INF/lib/oauth-client-1.19.1.jar. May be locked by another process.
+!SUBENTRY 1 org.eclipse.wst.server.core 4 0 2019-02-11 01:34:59.217
+!MESSAGE Could not delete C:/Users/pc/RestServices/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/wtpwebapps/DynamicRestServices/WEB-INF/lib/oauth-server-1.19.1.jar. May be locked by another process.
+!SUBENTRY 1 org.eclipse.wst.server.core 4 0 2019-02-11 01:34:59.217
+!MESSAGE Could not delete C:/Users/pc/RestServices/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/wtpwebapps/DynamicRestServices/WEB-INF/lib/oauth-signature-1.19.1.jar. May be locked by another process.
+!SUBENTRY 1 org.eclipse.wst.server.core 4 0 2019-02-11 01:34:59.217
+!MESSAGE Could not delete C:/Users/pc/RestServices/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/wtpwebapps/DynamicRestServices/WEB-INF/lib/ojdbc6.jar. May be locked by another process.
+!SUBENTRY 1 org.eclipse.wst.server.core 4 0 2019-02-11 01:34:59.217
+!MESSAGE Could not delete C:/Users/pc/RestServices/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/wtpwebapps/DynamicRestServices/WEB-INF/lib/org.osgi.core-4.2.0.jar. May be locked by another process.
+!SUBENTRY 1 org.eclipse.wst.server.core 4 0 2019-02-11 01:34:59.217
+!MESSAGE Could not delete C:/Users/pc/RestServices/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/wtpwebapps/DynamicRestServices/WEB-INF/lib/osgi-resource-locator-1.0.1.jar. May be locked by another process.
+!SUBENTRY 1 org.eclipse.wst.server.core 4 0 2019-02-11 01:34:59.217
+!MESSAGE Could not delete C:/Users/pc/RestServices/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/wtpwebapps/DynamicRestServices/WEB-INF/lib/persistence-api-1.0.jar. May be locked by another process.
+!SUBENTRY 1 org.eclipse.wst.server.core 4 0 2019-02-11 01:34:59.217
+!MESSAGE Could not delete C:/Users/pc/RestServices/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/wtpwebapps/DynamicRestServices/WEB-INF/lib/validation-api-1.1.0.Final.jar. May be locked by another process.
+!SUBENTRY 1 org.eclipse.wst.server.core 4 0 2019-02-11 01:34:59.217
+!MESSAGE Could not delete C:/Users/pc/RestServices/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/wtpwebapps/DynamicRestServices/WEB-INF/lib/yasson-1.0.jar. May be locked by another process.
+
+!ENTRY org.eclipse.wst.server.core 4 0 2019-02-11 03:24:06.025
+!MESSAGE Server Tomcat v8.0 Server at localhost failed to start.
+!SESSION 2019-02-14 19:53:50.629 -----------------------------------------------
+eclipse.buildId=4.4.1.M20140925-0400
+java.version=1.8.0_45
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.jee.product -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product -data C:\Users\pc\RestServices -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.m2e.logback.configuration 2 0 2019-02-14 19:54:02.713
+!MESSAGE Exception while setting up logging:org.eclipse.osgi.internal.framework.EquinoxConfiguration$1 cannot be cast to java.lang.String
+!STACK 0
+java.lang.ClassCastException: org.eclipse.osgi.internal.framework.EquinoxConfiguration$1 cannot be cast to java.lang.String
+	at org.eclipse.m2e.logback.configuration.LogHelper.logJavaProperties(LogHelper.java:26)
+	at org.eclipse.m2e.logback.configuration.LogPlugin.loadConfiguration(LogPlugin.java:189)
+	at org.eclipse.m2e.logback.configuration.LogPlugin.configureLogback(LogPlugin.java:144)
+	at org.eclipse.m2e.logback.configuration.LogPlugin.access$2(LogPlugin.java:107)
+	at org.eclipse.m2e.logback.configuration.LogPlugin$1.run(LogPlugin.java:62)
+	at java.util.TimerThread.mainLoop(Unknown Source)
+	at java.util.TimerThread.run(Unknown Source)
+
+!ENTRY org.eclipse.egit.ui 2 0 2019-02-14 19:54:43.570
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\pc'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
